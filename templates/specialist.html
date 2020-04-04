@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Headline -->
+    <div class="row justify-content-center" style="padding.top: 5rem;">
+	    <div class="col-sm-6-12 my-col-sm-6" align="center">
+		    <h1 style="font-size:25px">Our Specialist</h1>
+		</div>
+    </div>
+
+<!-- next and previes pages -->
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item disabled"><a class="page-link" href="{% url 'Specialist' %}">1</a></li>
+        <li class="page-item"><a class="page-link" href="{% url 'Specialist2' %}">2</a></li>
+        <li class="page-item"><a class="page-link" href="{% url 'Specialist3' %}">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="{% url 'Specialist2' %}">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+
+<!-- Profiles -->
+	<div class="container-fluid">
+		<div class="row justify-content-center">
+
+	        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" align="center">
+                <div class="card">
+                    <a href="{% url 'johnAriki' %}">
+                        <img class="card-img-top " src="{% static 'images/user.png' %}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h4 class ="card-title">John Ariki</h4>
+                        <p class="card-text">University of Juba</p>
+                    </div>
+                </div>
+            </div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" align="center">
+                <div class="card">
+                    <a href="{% url 'profYacobArsanoAtito' %}">
+                        <img class="card-img-top" style="height:340px;" src="{% static 'images/Dr-Yacob-Arsano.jpg' %}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h4 class ="card-title">Prof. Yacob Arsano Atito</h4>
+                        <p class="card-text">Associate professor, Director of University Press, AAU Project Coordinator <br> Addis Ababa University Department of Political Science & International Relations</p>
+                    </div>
+                </div>
+            </div>
+
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" align="center">
+                <div class="card">
+                    <a href="{% url 'runeBakke' %}">
+                        <img class="card-img-top" src="{% static 'images/rune_bakke.jpg' %}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h4 class ="card-title">Rune Bakke</h4>
+                        <p class="card-text">PhD <br> University College of South-east Norway Process, Energy and Environmental Technology</p>
+                    </div>
+                </div>
+            </div>
+
+			 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" align="center">
+                <div class="card">
+                    <a href="{% url 'waiswaDaudaBatega' %}">
+                        <img class="card-img-top" src="{% static 'images/waiswa_dauda_batega.jpg' %}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h4 class ="card-title">Waiswa Dauda Batega</h4>
+                        <p class="card-text">PhD <br> Makerere University Department of Sociology and Anthropology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" align="center">
+                <div class="card">
+                    <a href="{% url 'drJarleTBjerkhot' %}">
+                        <img class="card-img-top" src="{% static 'images/user.png' %}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h4 class ="card-title">Dr Jarle T Bjerkhot</h4>
+                        <p class="card-text">University College of Southeast Norway Department of Process, Energy and Environmental Technology</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" align="center">
+                <div class="card">
+                    <a href="{% url 'drWCTKGunawardana' %}">
+                        <img class="card-img-top" src="{% static 'images/dr_w_c_t_k_gunawardana.jpg' %}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h4 class ="card-title">Dr. W. C. T. K. Gunawardana</h4>
+                        <p class="card-text">Senior Lecturer, PhD <br> University of Peradeniya</p>
+                    </div>
+                </div>
+            </div>
+
+			 <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" align="center">
+                <div class="card">
+                    <a href="{% url 'drGBBHerath' %}">
+                        <img class="card-img-top" src="{% static 'images/dr_g_b_b_herath.jpg' %}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h4 class ="card-title">Dr. G. B. B. Herath</h4>
+                        <p class="card-text">Senior Lecturer, PhD <br> University of Peradeniya</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" align="center">
+                <div class="card">
+                    <a href="{% url 'drKBSJinadasa' %}">
+                        <img class="card-img-top" src="{% static 'images/dr_k_b_s_jinadasa.jpg' %}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h4 class ="card-title">Dr. K. B. S. Jinadasa</h4>
+                        <p class="card-text">Senior Lecturer, PhD <br> University of Peradeniya</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" align="center">
+                <div class="card">
+                    <a href="{% url 'balachandranKetheesan' %}">
+                        <img class="card-img-top" src="{% static 'images/balachandran_ketheesan.jpg' %}" alt="Card image cap">
+                    </a>
+                    <div class="card">
+                        <h4 class ="card-title">Balachandran Ketheesan</h4>
+                        <p class="card-text">Senior Lecturer, PhD <br> University of Jaffna Department of Civil Engineering</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" align="center">
+                <div class="card">
+                    <a href="{% url 'nickKilimani' %}">
+                        <img class="card-img-top" src="{% static 'images/user.png' %}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h4 class ="card-title">Nick Kilimani</h4>
+                        <p class="card-text">Makerere University</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" align="center">
+                <div class="card">
+                    <a href="{% url 'edwardKirumira' %}">
+                        <img class="card-img-top" src="{% static 'images/user.png' %}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h4 class ="card-title">Edward Kirumira</h4>
+                        <p class="card-text">Makerere University</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" align="center">
+                <div class="card">
+                    <a href="{% url 'drGBBHerath' %}">
+                        <img class="card-img-top" src="{% static 'images/synne_kleiven.jpg' %}" alt="Card image cap">
+                    </a>
+                    <div class="card-body">
+                        <h4 class ="card-title">Synne Kleiven</h4>
+                        <p class="card-text">Assoc.prof. <br> Department of Natural Sciences and Environmental Health</p>
+                    </div>
+                </div>
+            </div>
+
+		</div>
+	</div>
+
+    <!-- next and previes pages bottom-->
+    <nav aria-label="Page navigation" style="padding-top: 5rem;">
+        <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item disabled"><a class="page-link" href="{% url 'Specialist' %}">1</a></li>
+        <li class="page-item"><a class="page-link" href="{% url 'Specialist2' %}">2</a></li>
+        <li class="page-item"><a class="page-link" href="{% url 'Specialist3' %}">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="{% url 'Specialist2' %}">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+
+{% endblock content %}
+

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%block background %}
+<div class="bg">
+
+{% block banner %}
+
+<section id="banner">
+    <div class="content">
+        <h2>For the environment</h2>
+        <p>Anh Duc Nguyen lead an international project between USN, 3 universities in Kyrgyzstan
+            and 3 universities in Georgia,
+            called Sustainable Tourism: rural entrepreneurship and heritage</p>
+
+    </div>
+</section>
+
+</div>
+<br>
+    <div class="col-12">
+        <section >
+            <h2 class="major"><span>For project participants </span></h2>
+            <p class="text-center">
+                This site will provide you with the access to collect internal reports, meeting minutes,
+                working documents and add new relevant news.
+            </p>
+            <div class="text-center">
+                <a href="{% url 'login' %}" class="button text-block">Login in</a>
+            </div>
+        </section>
+
+    </div>
+{% endblock banner %}
+
+{% endblock background %}

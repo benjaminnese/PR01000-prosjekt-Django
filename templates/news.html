@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{%load static%}
+{% block content %}
+
+
+
+
+
+		<div class="col-12 mt-5">
+
+			<!-- Blog -->
+				<section class="box blog">
+					<div>
+						<div class="row">
+							<div class="col-12 ">
+								<div class="container">
+								<div class="row">
+									<!-- Blog Entries Column -->
+									<div class="col-md-12 ">
+										 {% for post in post_list %}
+										<div class="card mb-4">
+											<div class="card-body ">
+												<h1 class="card-title">{{ post.title }}</h1>
+												<p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+												<p class="card-text">{{post.content|slice:":200" }} ...</p>
+												<a href="{% url 'post_detail' post.slug  %}" class="btn">Read More &rarr;</a>
+											</div>
+										</div>
+										{% endfor %}
+									</div>
+								</div>
+							</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+
+
+
+{% endblock content %}

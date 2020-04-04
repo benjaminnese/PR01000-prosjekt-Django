@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sustainable Tourism</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+
+	</head>
+
+	<body>
+
+		<div id="page-wrapper">
+
+<header id="header">
+					<div class="logo container">
+						<div>
+							<h1><a href="{% url 'home' %}" id="logo">Sustainable Tourism</a></h1>
+							<p>International project</p>
+						</div>
+					</div>
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+				<a href="{% url 'news_page' %}" class="nav-item nav-link ">News</a>
+                <a href="{% url 'project' %}" class="nav-item nav-link ">Prosjects</a>
+                <a href="{% url 'Specialist' %}" class="nav-item nav-link">Spesicalist</a>
+                <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a href="{% url 'login' %}" class="nav-item nav-link">Login</a>
+            </div>
+        </div>
+    </nav>
+ </header>
+
+
+			<!-- viser backgrunn-->
+			{%block background%}
+			<!-- viser banner-->
+            {% block banner %}
+
+            {% endblock banner %}
+
+			{%endblock background%}
+			<!-- viser unikt innhold for hver side-->
+            <section id="content-main">
+                   {% block content %}
+
+                    {% endblock content %}
+            </section>
+
+			<!-- Footer -->
+				<footer id="footer" >
+					<div class="container">
+						<div class="row gtr-200">
+
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section>
+										<h2 class="major"><span>Contact</span></h2>
+										<ul class="contact">
+												<li><a href="https://www.usn.no/om-usn/kontakt-oss/ansatte/nuno-alexandre-n-marques"></a></li>
+												<li><a href="https://www.usn.no/om-usn/kontakt-oss/ansatte/anh-nguyen-duc-1"></a></li>
+												<li><a href="https://www.usn.no/om-usn/kontakt-oss/ansatte/anh-nguyen-duc-1"></a></li>
+												<li><a href="https://www.usn.no/om-usn/kontakt-oss/ansatte/anh-nguyen-duc-1"></a></li>
+
+
+
+										</ul>
+									</section>
+							</div>
+						</div>
+
+
+						<!-- Copyright -->
+							<div id="copyright">
+								<ul class="menu">
+									<li>&copy; Project group 8 </li>
+								</ul>
+							</div>
+
+					</div>
+				</footer>
+
+		</div>
+
+
+		<!-- Scripts -->
+
+
+	</body>
+</html>

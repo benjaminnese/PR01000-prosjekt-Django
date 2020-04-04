@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+    <div class="row justify-content-center">
+	    <div class="col-sm-6-12 my-col-sm-6 align-self-center" align="center">
+    		<img src="{% static 'images/user.png' %}" alt="NAVN">
+    	</div>
+    	<div class="col-lg-4 col-sm-12 col-xs-12" align="center">
+    		<h2>NAVN</h2><br>
+            <p> GRAD </p>
+            <h1>Work address: </h1>
+            <p> ADRESSE, <br>
+                BY, <br>
+                LAND. </p>
+            <h1> Home </h1>
+            <p> ADRESSE, <br>
+                BY, <br>
+                LAND. <br>
+                Work Phone:  <br>
+                Work Phone:  <br>
+                Cell Phone:  <br>
+                Work Email: <a href="EPOST">EPOST</a>
+            </p>
+        </div>
+        <div class="col-lg-10 col-sm-12 col-xs-12" align="center">
+            <h1>Professional Bio</h1>
+            <p>BIO TEKST</p>
+    	</div>
+    </div>
+
+{% endblock content %}

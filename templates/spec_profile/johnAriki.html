@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+    <div class="row justify-content-center">
+	    <div class="col-sm-6-12 my-col-sm-6 align-self-center" align="center">
+    		<img src="{% static 'images/user.png' %}" alt="John Ariki">
+    	</div>
+    	<div class="col-lg-4 col-sm-12 col-xs-12" align="center">
+    		<h2>John Ariki</h2><br>
+            <p > University of Juba. <br> Work Email: <a href="ariki@gmax.net">ariki@gmax.net</a></p>
+        </div>
+        <div class="col-lg-10 col-sm-12 col-xs-12" align="center">
+            <h1>Professional Bio</h1>
+            <p>Dr. John Ariki is WaSo Africa Co-ordinator at the University of Juba in South Sudan. He acquired his first degree (BSc) in Geology from Ain Shams University, Cairo (1987), followed by an MSc (1994)
+                and PhD in Geosciences (1997) from Clausthal University of Technology, Clausthal – Zellerfeld, Germany. He is currently the Director of the Centre for Remote Sensing and GIS at the University of
+                Juba with a research interest in Applications of GIS in Natural Resources Management and Environment.</p>
+    	</div>
+    </div>
+
+{% endblock content %}

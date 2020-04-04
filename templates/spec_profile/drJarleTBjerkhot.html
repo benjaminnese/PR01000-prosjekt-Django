@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body>
+    <div class="row justify-content-center">
+	    <div class="col-sm-6-12 my-col-sm-6 align-self-center" align="center">
+    		<img src="{% static 'images/user.png' %}" alt="Dr Jarle T Bjerkhot">
+    	</div>
+    	<div class="col-lg-4 col-sm-12 col-xs-12" align="center">
+    		<h2>Dr Jarle T Bjerkhot</h2><br>
+            <p> University College of Southeast Norway, Department of Process, Energy and Environmental Technology </p>
+            <h1>Work address: </h1>
+            <p> Kjølnes ring 56 <br>
+                Porsgrunn 3901, <br>
+                Norway. </p>
+            <p> Personal Email: <a href="jarle.t.bjerkholt@usn.no">jarle.t.bjerkholt@usn.no</a>
+            </p>
+        </div>
+        <div class="col-lg-10 col-sm-12 col-xs-12" align="center">
+            <h1>Professional Bio</h1>
+            <p>MSc and PhD at Norwegian University of Life Sciences <br>
+                Interests <br>
+                – stormwater management <br>
+                – stormwater systems, adaption to climate change <br>
+                – drinking water systems <br>
+                – modelling of transport systems <br>
+                – agricultural drainage and irrigation sysem</p>
+    	</div>
+    </div>
+
+{% endblock content %}
