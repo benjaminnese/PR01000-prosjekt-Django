@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.views import generic
 from .models import Post
 from django.shortcuts import render
@@ -26,6 +27,7 @@ def about(request):
 
 def login(request):
     return render(request, 'admin/login.html', {})
+
 
 
 class PostDetail(generic.DetailView):

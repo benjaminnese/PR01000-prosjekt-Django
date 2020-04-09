@@ -9,6 +9,7 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('login/', views.login, name="login"),
     path('news_page/<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
+    path('links/<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
 
     path('specialist2/', views.spec2, name='Specialist2'),
     path('spec_profile/johnAriki/', views.johnAriki, name='johnAriki'),
