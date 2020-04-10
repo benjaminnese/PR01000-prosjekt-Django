@@ -1,7 +1,7 @@
 # PR01000
 Structure of the source code is as follows. 
 
-BLOG // This is the main app where most of our code is made
+BLOG 
 
 -admin.py // here we configure the Django admin site on how it will filter and search diffrents class models from models.py
 
