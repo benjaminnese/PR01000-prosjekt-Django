@@ -1,11 +1,11 @@
 # PR01000
 Structure of the source code is as follows. 
 
-BLOG //This is the main app where most of our code is made
--admin.py // here we configure the Django admin site on how it will filter and search diffrents class models from models.py
--models.py // here we display the fields we want the user to type inn or auto added to the new object. 
--urls.py // here we redirect the user to right html file based on urls slug
--views.py // simple render request functions for returing the right html site
+BLOG || This is the main app where most of our code is made
+-admin.py || here we configure the Django admin site on how it will filter and search diffrents class models from models.py
+-models.py || here we display the fields we want the user to type inn or auto added to the new object. 
+-urls.py || here we redirect the user to right html file based on urls slug
+-views.py || simple render request functions for returing the right html site
 
 
 
