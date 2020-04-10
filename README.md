@@ -30,6 +30,12 @@ TEMPLATES
 
 // all the different html files are stored here. 
 
+TO RUN SERVER 
+1. $ pip install -r requirements.txt
+2. python manage.py makemigrations
+3. python manage.py migrate
+4. python manage.py runserver
+
 For testing site please user provided test user account. 
 User: test
 Password: En9m_V3V
