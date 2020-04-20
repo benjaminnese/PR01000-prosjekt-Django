@@ -2,10 +2,10 @@
 {% load static %}
 {% block content %}
 
-<body>
+<div class="container">
     <div class="row justify-content-center">
 	    <div class="col-sm-6-12 my-col-sm-6 align-self-center" align="center">
-    		<img src="{% static 'images/user.png' %}" alt="Nick Kilimani">
+    		<img style="height: 20rem;" src="{% static 'images/user.png' %}" alt="Nick Kilimani">
     	</div>
     	<div class="col-lg-4 col-sm-12 col-xs-12" align="center">
     		<h2>Nick Kilimani</h2><br>
@@ -17,5 +17,6 @@
 
     	</div>
     </div>
+</div>
 
 {% endblock content %}
