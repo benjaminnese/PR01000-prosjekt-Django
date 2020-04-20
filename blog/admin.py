@@ -7,7 +7,7 @@ class PostAdmin(admin.ModelAdmin):
     list_filter = ("status",)
     search_fields = ['title', 'content']
     prepopulated_fields = {'slug': ('title',)}
-
+    date_hierarchy = 'created_on'
 
 class PostList(admin.ModelAdmin):
     list_display = ('title', 'linkAuthor')
@@ -23,6 +23,7 @@ class PostInternalReports(admin.ModelAdmin):
     list_filter = ("statusReports",)
     search_fields = ['titleReports', 'contentReports']
     prepopulated_fields = {'slugReports': ('titleReports',)}
+    date_hierarchy = 'updated_onReports'
 
 
 class PostMeetings(admin.ModelAdmin):
@@ -30,7 +31,7 @@ class PostMeetings(admin.ModelAdmin):
     list_filter = ("statusMeeting",)
     search_fields = ['title', 'contentMeeting']
     prepopulated_fields = {'slugMeeting': ('titleMeeting',)}
-
+    date_hierarchy = 'created_onMeeting'
 
 admin.site.register(Post, PostAdmin)
 

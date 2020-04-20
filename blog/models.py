@@ -57,5 +57,5 @@ class Meeting(models.Model):
     authorMeeting = models.ForeignKey(User, on_delete=models.CASCADE)
     updated_onMeeting = models.DateTimeField(auto_now=True)
     contentMeeting = models.CharField(max_length=100)
-    created_onMeeting = models.DateTimeField(auto_now_add=True)
+    created_onMeeting = models.DateTimeField()
     statusMeeting = models.IntegerField(choices=STATUS, default=0)
