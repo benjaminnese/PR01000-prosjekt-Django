@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row justify-content-center">
+	    <div class="col-sm-6-12 my-col-sm-6 align-self-center" align="center">
+    		<img style="height: 20rem;" src="{% static 'images/dr_mona_sabo.jpg' %}" alt="Dr Mona Sabo">
+    	</div>
+    	<div class="col-lg-4 col-sm-12 col-xs-12" align="center">
+    		<h2>Dr Mona Sabo</h2><br>
+            <p> Associate Professor University of Southeast Norway Natural Sciences and Environmental Healt <br>
+                Work Email: <a href="mona.sabo@usn.no">mona.sabo@usn.no</a>
+            </p>
+        </div>
+        <div class="col-lg-10 col-sm-12 col-xs-12" align="center">
+            <h1>Professional Bio</h1>
+            <p>MSc at University College of Southeast Norway, PhD at University of Oslo. Associate Professor in Molecular Biology.
+                Work with genetic methods and are involved in projects related to cyanobacteria and toxin production and to projects
+                on fish health in fresh water. Supervise PhD students in molecular methods.</p>
+    	</div>
+    </div>
+</div>
+
+{% endblock content %}

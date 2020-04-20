@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row justify-content-center">
+	    <div class="col-sm-6-12 my-col-sm-6 align-self-center" align="center">
+    		<img style="height: 20rem;" src="{% static 'images/user.png' %}" alt="Prof. Francis Mutua">
+    	</div>
+    	<div class="col-lg-4 col-sm-12 col-xs-12" align="center">
+    		<h2>Prof. Francis Mutua</h2><br>
+            <p> University of Nairobi Department of Meteorology </p>
+
+        </div>
+        <div class="col-lg-10 col-sm-12 col-xs-12" align="center">
+            <h1>Professional Bio</h1>
+            <p>Prof. Francis Mutua is head of the surface water resources and hydrometeorology thematic unit at the University of
+                Nairobi Department of Meteorology. He is a member of the African Meteorological Society (AMS), Kenya Meteorological
+                Society (KMS) and the International Association of Hydrological Sciences (IAHS).
+                Prof Mutua has provided consultancy services in the area of water and climate for a wide range of international
+                organisations, including the European Commission, FAO,  ATPS, the Lake Victoria Environmental Management Project (LVEMP),
+                the Nile Basin Initiative, WWF, IUCN, UNDP/GEF, the IGAD Climate Prediction and Applications Center (ICPAC) and the Government
+                of Kenya. He has also published extensively on the topic of water and climate and is an experienced facilitator for training
+                workshops and seminars on hydrological issues and water resources management.</p>
+    	</div>
+    </div>
+</div>
+
+{% endblock content %}

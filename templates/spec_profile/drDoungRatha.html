@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row justify-content-center">
+	    <div class="col-sm-6-12 my-col-sm-6 align-self-center" align="center">
+    		<img style="height: 20rem;" src="{% static 'images/user.png' %}" alt="Dr. Doung Ratha">
+    	</div>
+    	<div class="col-lg-4 col-sm-12 col-xs-12" align="center">
+    		<h2>Dr. Doung Ratha</h2><br>
+            <p> Institute of Technology of Cambodia <br>
+                Work Email: <a href="doung.ratha@gmail.com">doung.ratha@gmail.com</a>
+            </p>
+        </div>
+        <div class="col-lg-10 col-sm-12 col-xs-12" align="center">
+            <h1>Professional Bio</h1>
+            <p>Ratha Doung is a lecturer and researcher holding a Doctoral Degree in Environmental Engineering from University
+                of the Philippines-Diliman and Tokyo Institute of Technology-Japan with high distinction under AUN/SEED-Net JICA
+                in November, 2015. Dr. Doung received his Degree of Engineering (5 years French system) in Rural Engineering from
+                the Institute of Technology of Cambodia in 2010 and a Master’s degree in Geological Engineering (M.Eng) from Gadjah
+                Mada University, Yogyakarta, Indonesia in 2012. His previous studies related to Geo-Environment, Geo-hazard
+                management, the availability of groundwater resources, the interaction between ground and surface water, salinity
+                intrusion modeling and coastal aquifer management.</p>
+    	</div>
+    </div>
+</div>
+
+{% endblock content %}

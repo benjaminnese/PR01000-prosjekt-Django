@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row justify-content-center">
+	    <div class="col-sm-6-12 my-col-sm-6 align-self-center" align="center">
+    		<img style="height: 20rem;" src="{% static 'images/hans_renssen.jpg' %}" alt="Hans Renssen">
+    	</div>
+    	<div class="col-lg-4 col-sm-12 col-xs-12" align="center">
+    		<h2>Hans Renssen</h2><br>
+            <p> Professor University of Southeast Norway Natural Sciences and Environmental Health </p>
+
+        </div>
+        <div class="col-lg-10 col-sm-12 col-xs-12" align="center">
+            <h1>Professional Bio</h1>
+            <p>MSc in Physical Geography at University of Amsterdam, PhD at Utrecht University. Professor in Climate change research.
+                <br>
+                Research interests: <br>
+                The impact of climate change on the environment <br>
+                Past climate variability</p>
+    	</div>
+    </div>
+</div>
+
+{% endblock content %}
