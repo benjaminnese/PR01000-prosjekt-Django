@@ -9,6 +9,7 @@ class PostAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     date_hierarchy = 'created_on'
 
+
 class PostList(admin.ModelAdmin):
     list_display = ('title', 'linkAuthor')
     search_fields = ['link']
@@ -32,6 +33,7 @@ class PostMeetings(admin.ModelAdmin):
     search_fields = ['title', 'contentMeeting']
     prepopulated_fields = {'slugMeeting': ('titleMeeting',)}
     date_hierarchy = 'created_onMeeting'
+
 
 admin.site.register(Post, PostAdmin)
 
