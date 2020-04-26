@@ -11,36 +11,32 @@
 
                     <!-- Feature -->
                         <section class="box feature">
-                            <div class="image featured">
-                                <img src="{% static 'images/afrika.jpg'%}" style=" height: 20%;" alt="Afrika">
-                            </div>
-                            <h3><a href="#">WaSo Africa</a></h3>
+                            <a href="{% url 'africa' %}" class="image featured"><img src="{% static 'images/afrika.jpg'%}"style=" height: 20%;" alt="afrika" /></a>
+                            <h3><a href="{% url 'africa' %}">WaSo Africa</a></h3>
                             <p>
                                 The overall population in the Nile basin countries will have increased ten-fold from 1950 to 2050 reaching more than 860 million,
                                 of which more than 50% will live in the basin area solely dependent upon the Nile and the rain in the catchment area.
                             </p>
                         </section>
-
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">
 
                     <!-- Feature -->
                         <section class="box feature">
-                            <a href="#" class="image featured"><img src="{% static 'images/asia.jpg'%}"style=" height: 20%;" alt="Asia" /></a>
-                            <h3><a href="#">WaSo Asia</a></h3>
+                            <a href="{% url 'asia' %}" class="image featured"><img src="{% static 'images/asia.jpg'%}"style=" height: 20%;" alt="Asia" /></a>
+                            <h3><a href="{% url 'asia' %}">WaSo Asia</a></h3>
                             <p>
                                 Sri Lanka, Bangladesh and Cambodia are three countries
                                 which are heavily dependent on sound water management and some of the most severely
                                 affected countries by the Climate Change.
                             </p>
                         </section>
-
                 </div>
-
-
             </div>
         </div>
     </section>
 </div>
+<div style="height:10vh;">
 
+</div>
 {% endblock content %}

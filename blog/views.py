@@ -33,6 +33,11 @@ class PostDetail(generic.DetailView):
     model = Post
     template_name = 'post_detail.html'
 
+def asia(request):
+    return render(request, 'projects/asia.html', {})
+
+def africa(request):
+    return render(request, 'projects/africa.html', {})
 
 def spec2(request):
     return render(request, 'specialist2.html', {})

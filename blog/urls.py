@@ -11,6 +11,10 @@ urlpatterns = [
     path('news_page/<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
     path('links/<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
 
+    path('projects/asia/', views.asia, name='asia'),
+    path('projects/africa/', views.africa, name='africa'),
+
+
     path('spec_profile/mal/', views.mal, name='mal'),
     path('spec_profile/johnAriki/', views.johnAriki, name='johnAriki'),
     path('spec_profile/profYacobArsanoAtito/', views.profYacobArsanoAtito, name='profYacobArsanoAtito'),
