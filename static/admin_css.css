@@ -4,13 +4,19 @@ background-position: center;
 background-size: cover;
 min-height:100vh;
 width:100%;
+
 }
+
 
 #header{
 position: relative;
 width: 100%;
-z-index: 99;
-background-color: black;
+z-index: 0;
+background-color: darkslategrey;
+
+}
+#header a{
+      font-size:20px;
 }
 
 #content .colMS h1{
