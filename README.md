@@ -37,8 +37,10 @@ TO RUN SERVER
 4. python manage.py runserver
 
 For testing site please user provided test user account. 
-User: test
-Password: En9m_V3V
+User username: test
+Admin username: benjamin
+
+Password both: En9m_V3V
 
 
 
