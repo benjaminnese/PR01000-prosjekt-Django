@@ -37,6 +37,7 @@ TO RUN SERVER
 4. python manage.py runserver
 
 For testing site please user provided test user account. 
+
 User username: test
 Admin username: benjamin
 
