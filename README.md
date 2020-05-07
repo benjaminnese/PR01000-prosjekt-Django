@@ -30,13 +30,19 @@ TEMPLATES
 
 // all the different html files are stored here. 
 
+Starting Django
+1. First you need to install Python, Git and a IDE. We used PyCharm, so the steps might differ. 
+2. Follow the instructions in the video to access the GitHub https://www.youtube.com/watch?v=mPmmvtYoRyc
+
 TO RUN SERVER 
+Type into console
 1. pip install -r requirements.txt
 2. python manage.py makemigrations
 3. python manage.py migrate
 4. python manage.py runserver
+5. Open in browser http://127.0.0.1:8000/
 
-For testing site please user provided test user account. 
+For testing site please use provided test user accounts. 
 
 User username: test
 Admin username: benjamin
